@@ -1,37 +1,47 @@
-* {
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "Varela round", sans-serif;
-    flex-direction: column;
+body {
     background-color: rgb(207, 206, 216);
-    border: 2px #451e72cf solid;
-    border-radius: 15px;
+    font-family: "Varela round", sans-serif;
 }
-.photo, .portfolio {
-    justify-content: center;
-    max-width: 350px;
-    border-radius: 23px;
-}
-a {
-    padding: 1em 2em;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: #331556cf;
-    border-radius: 10px;
-    list-style-type: none;
-}
-p { 
-    margin: 30px 300px;
-    color: rgb(51, 54, 58);
+header, nav {
+    display: flex;
+    flex-direction: column;
 }
 h3 {
+    align-self: stretch;
+    text-align: center;
     color: rgb(255, 255, 255);
     background-color: #331556cf;
     border: 6px#451e72cf solid;
     border-radius: 5px;
-    padding: .2em 22em;
     text-size-adjust: 115%; 
+}
+a {
+    padding: 1em 2em;
+    align-self: stretch;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #331556cf;
+    border-radius: 10px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 54, 58);
+}
+img {
+    max-width: 400px;
+    border-radius: 10%;
+    padding: 1em;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    flex-wrap: wrap;
+    max-width: 400px;
 }
